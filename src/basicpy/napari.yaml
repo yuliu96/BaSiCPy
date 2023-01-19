@@ -1,0 +1,21 @@
+name: BaSiCPy
+display_name: BaSiCPy
+contributions:
+  commands:
+    - id: BaSiCPy.make_qwidget
+      python_name: basicpy._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: BaSiCPy.make_magic_widget
+      python_name: basicpy._widget:example_magic_widget
+      title: Make example magic widget
+    - id: BaSiCPy.make_func_widget
+      python_name: basicpy._widget:example_function_widget
+      title: Make example function widget
+  widgets:
+    - command: BaSiCPy.make_qwidget
+      display_name: Example QWidget
+    - command: BaSiCPy.make_magic_widget
+      display_name: Example Magic Widget
+    - command: BaSiCPy.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget
