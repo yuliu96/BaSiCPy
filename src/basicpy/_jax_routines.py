@@ -84,7 +84,7 @@ class BaseFit(BaseModel):
             )
         )
 
-    #@jit
+    @jit
     def _fit_jit(
         self,
         Im,
@@ -366,7 +366,7 @@ class ApproximateFit(BaseFit):
     _ent1: float = PrivateAttr(1.0)
     _ent2: float = PrivateAttr(10.0)
 
-    #@jit
+    @jit
     def _step(
         self,
         Im,
